@@ -48,7 +48,7 @@ end
 
 ruby '2.2.4'
 
-gem 'rails_12factor', group: :production
+
 
 
 
