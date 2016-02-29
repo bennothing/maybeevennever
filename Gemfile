@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-gem 'sqlite3'
+
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bcrypt','~> 3.1.7'
 # Use Unicorn as the app server
@@ -53,5 +53,12 @@ gem 'puma'
 
 gem 'rails_12factor'
 
+roup :production do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3", "~> 1.3.0"
+end
 
 
